@@ -1,0 +1,21 @@
+{
+	"name": "logseq-panic-theme",
+	"author": "@SoKirill",
+	"version": "1.0.0",
+	"description": "Logseq theme inspired by panic mode and palette themes",
+	"logseq": {
+		"themes": [
+			{
+				"name": "Panic theme",
+				"url": "./custom.css",
+				"description": "Dark blue logseq theme"
+			}
+		],
+		"id": "sokirill_panic_theme",
+		"icon": "./assets/panic-logo.png"
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"semantic-release": "^18.0.1"
+	}
+}
