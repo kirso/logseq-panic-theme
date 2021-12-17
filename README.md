@@ -16,11 +16,10 @@ The [Logseq](https://logseq.com/) Panic theme is a dark-only theme inspired by [
 
 ## Usage
 
-You can just add the following lines to `custom.css`
+You can add the following line (above everything else) to your local directory where `custom.css` lives.
 
 ```css
-/* This must be the first line of the custom.css with other import rules */
-@import url('https://sokirill.github.io/logseq-panic-theme/custom.css');
+@import url('https://cdn.jsdelivr.net/gh/sokirill/logseq-panic-theme@main/custom.css');
 ```
 
 Or, just download / copy the code and paste it into your logseq CSS configuration file
@@ -34,7 +33,7 @@ This is an early iteration of the theme and there probably are several issues wh
 
 ## Bullet threading
 
-If you don't want bullet threading in the theme, just delete all the code from `custom.css` the following mention:
+If you don't want bullet threading in the theme, just delete the code in `custom.css` with the following comment:
 
 ```css
 /* Bullet threading*/
@@ -51,6 +50,8 @@ Threading bullets by [Peng Xiao](https://github.com/Pengx17)
 ## Support my work
 
 <a href="https://www.buymeacoffee.com/kirill" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
+Or just follow me on [Twitter](https://www.twitter.com/SoKirill)
 
 ## Legal speech
 

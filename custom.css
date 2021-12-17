@@ -5,7 +5,6 @@ Original theme by Zeno Rocha: (https://github.com/zenorocha/dracula-theme)
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://cdn.jsdelivr.net/gh/pengx17/logseq-dev-theme@main/bullet_threading.css');
 
 :root {
 	/*
@@ -30,6 +29,9 @@ Original colors from Bear Panic Mode theme package
   --highlight-marker: rgba(79, 116, 163, 1);
   --code-background: rgba(23, 33, 52, 1);
 */
+	/* Bullet threading root */
+	--ls-block-bullet-active-color: var(--yellow);
+	--ls-block-bullet-threading-width: 1px;
 
 	--background: rgba(17, 28, 42, 1);
 	--light-background: rgba(23, 33, 52, 1);
@@ -406,4 +408,103 @@ a.fade-link {
 	color: var(--ls-icon-color);
 	font-weight: bold;
 	font-family: var(--font-family);
+}
+
+/* Flash card styling */
+div[data-refs-self*='"card"'] {
+	background-color: var(--light-background);
+}
+
+/* Bullet threading root */
+block-control {
+	z-index: 1;
+}
+
+.block-children {
+	border-left-width: var(--ls-block-bullet-threading-width);
+}
+
+.block-content-wrapper {
+	position: relative;
+}
+
+.bullet-container {
+	height: 14px !important;
+	width: 14px !important;
+	position: relative;
+	transform: translate(1px, -1px);
+}
+
+.ls-block .bullet {
+	background-color: var(--ls-block-bullet-active-color);
+	box-shadow: 0 0 0 1px var(--ls-block-bullet-active-color);
+}
+.ls-block div.items-center {
+	position: relative;
+	height: 26px !important;
+}
+.ls-block > .items-baseline {
+	align-items: initial;
+}
+.ls-block:not(:focus-within) .bullet {
+	background-color: var(--ls-block-bullet-color);
+	transform: scale(1);
+	box-shadow: none;
+}
+.ls-block:not(:focus-within) > .items-baseline {
+	align-items: baseline;
+}
+.ls-block .ls-block > div > div.items-center::before {
+	pointer-events: none;
+	content: '';
+	left: calc(var(--ls-block-bullet-threading-width) * -1);
+	right: 6px;
+	top: calc(-50% + var(--ls-block-bullet-threading-width) * 0.5 - 1px);
+	bottom: 50%;
+	/* shift left 1px for border */
+	position: absolute;
+	border-left: var(--ls-block-bullet-threading-width) solid transparent;
+	border-bottom: var(--ls-block-bullet-threading-width) solid transparent;
+	border-bottom-left-radius: 10px;
+}
+.ls-block .ls-block:focus-within > div > div.items-center::before {
+	border-color: var(--ls-block-bullet-active-color);
+}
+.ls-block .block-children > .ls-block::before {
+	pointer-events: none;
+	content: '';
+	top: -1rem;
+	bottom: 0;
+	border-left: var(--ls-block-bullet-threading-width) solid transparent;
+	left: calc(var(--ls-block-bullet-threading-width) * -1);
+	position: absolute;
+}
+.ls-block .block-children:focus-within > .ls-block:not(:focus-within)::before {
+	border-color: var(--ls-block-bullet-active-color);
+}
+.ls-block
+	.block-children:focus-within
+	> .ls-block:focus-within
+	~ .ls-block::before {
+	border-color: transparent;
+}
+.ls-block[haschild='true'] > div > .block-content-wrapper::before {
+	pointer-events: none;
+	content: '';
+	top: 12px;
+	bottom: 0;
+	left: -15px;
+	position: absolute;
+	border-left: var(--ls-block-bullet-threading-width) solid transparent;
+}
+.ls-block[haschild='true']:focus-within > div > .block-content-wrapper::before {
+	border-color: var(--ls-block-bullet-active-color);
+}
+
+/* Disable for doc mode */
+.doc-mode div.items-center::before,
+.doc-mode div.items-center::after,
+.doc-mode .ls-block::before,
+.doc-mode .ls-block::after {
+	display: none;
 }

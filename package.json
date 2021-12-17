@@ -2,11 +2,11 @@
 	"name": "logseq-panic-theme",
 	"author": "@SoKirill",
 	"version": "1.0.0",
-	"description": "Logseq theme inspired by panic mode and palette themes",
+	"description": "Logseq theme inspired by panic mode and palette themes by Panic",
 	"logseq": {
 		"themes": [
 			{
-				"name": "Panic theme",
+				"name": "panic-theme",
 				"url": "./custom.css",
 				"description": "Dark blue logseq theme"
 			}
