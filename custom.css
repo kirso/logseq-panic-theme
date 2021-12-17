@@ -29,7 +29,7 @@ Original colors from Bear Panic Mode theme package
   --highlight-marker: rgba(79, 116, 163, 1);
   --code-background: rgba(23, 33, 52, 1);
 */
-	/* Bullet threading root */
+	/* Bullet threading root (delete two lines below if you don't want bullet threds */
 	--ls-block-bullet-active-color: var(--yellow);
 	--ls-block-bullet-threading-width: 1px;
 
@@ -415,7 +415,7 @@ div[data-refs-self*='"card"'] {
 	background-color: var(--light-background);
 }
 
-/* Bullet threading root */
+/* Bullet threading (delete everything below to stop bullet threads */
 block-control {
 	z-index: 1;
 }
