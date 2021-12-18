@@ -19,7 +19,8 @@
 		"semantic-release": "^18.0.1"
 	},
 	"scripts": {
-		"semantic-release": "semantic-release --branches main"
+		"semantic-release": "semantic-release --branches main",
+		"commit": "git-cz"
 	},
 	"repository": {
 		"type": "git",
