@@ -8,6 +8,7 @@ The [Logseq](https://logseq.com/) Panic theme is a dark-only theme inspired by [
 
 - Font has been changed to Poppins (originally Avenir)
 - Using bright pink to differentiate internal and external links (feel free to change it in the `custom.css` to your liking)
+- Automated Changelog will be added later
 
 ## Screenshots
 
