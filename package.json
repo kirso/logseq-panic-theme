@@ -24,6 +24,12 @@
 		"semantic-release": "semantic-release --branches main",
 		"commit": "cz"
 	},
+	"release": {
+		"branches": [
+			"main",
+			"next"
+		]
+	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/sokirill/logseq-panic-theme.git"
