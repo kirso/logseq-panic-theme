@@ -1,42 +1,43 @@
 {
-	"name": "logseq-panic-theme",
-	"author": "@SoKirill",
-	"version": "0.0.0-development",
-	"description": "Logseq theme inspired by panic mode and palette themes by Panic",
-	"logseq": {
-		"themes": [
-			{
-				"name": "panic-theme",
-				"url": "./custom.css",
-				"description": "Dark blue logseq theme"
-			}
-		],
-		"id": "sokirill_panic_theme",
-		"icon": "./assets/panic-logo.png"
-	},
-	"license": "MIT",
-	"devDependencies": {
-		"@semantic-release/changelog": "^6.0.1",
-		"cz-conventional-changelog": "3.3.0",
-		"semantic-release": "^18.0.1"
-	},
-	"scripts": {
-		"semantic-release": "semantic-release --branches main",
-		"commit": "cz"
-	},
-	"release": {
-		"branches": [
-			"main",
-			"next"
-		]
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/sokirill/logseq-panic-theme.git"
-	},
-	"config": {
-		"commitizen": {
-			"path": "./node_modules/cz-conventional-changelog"
-		}
-	}
+  "name": "logseq-panic-theme",
+  "author": "@SoKirill",
+  "version": "0.0.0-development",
+  "description": "Logseq theme inspired by panic mode and palette themes by Panic",
+  "logseq": {
+    "themes": [
+      {
+        "name": "panic-theme",
+        "url": "./custom.css",
+        "description": "Dark blue logseq theme"
+      }
+    ],
+    "id": "sokirill_panic_theme",
+    "icon": "./assets/panic-logo.png"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/github": "^8.0.2",
+    "cz-conventional-changelog": "3.3.0",
+    "semantic-release": "^18.0.1"
+  },
+  "scripts": {
+    "semantic-release": "semantic-release",
+    "commit": "cz"
+  },
+  "release": {
+    "branches": [
+      "main",
+      "next"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sokirill/logseq-panic-theme.git"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
