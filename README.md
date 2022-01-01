@@ -20,7 +20,7 @@ The [Logseq](https://logseq.com/) Panic theme is a dark-only theme inspired by [
 You can add the following line (above everything else) to your local directory where `custom.css` lives.
 
 ```css
-@import url("https://cdn.jsdelivr.net/gh/sokirill/logseq-panic-theme@latest/custom.css");
+@import url("https://cdn.jsdelivr.net/gh/sokirill/logseq-panic-theme@main/custom.css");
 ```
 
 Or, just download / copy the code and paste it into your logseq CSS configuration file
