@@ -4,7 +4,9 @@ Original author: Michael Kaminsky (http://github.com/mkaminsky11)
 Original theme by Zeno Rocha: (https://github.com/zenorocha/dracula-theme)
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import url("https://cdn.jsdelivr.net/gh/pengx17/logseq-dev-theme@main/bullet_threading.css");
 
 :root {
 	/*
@@ -66,7 +68,7 @@ Original colors from Bear Panic Mode theme package
 	--ls-tag-text-hover-opacity: 0.8;
 	--ls-page-text-size: 16px;
 	--ls-page-title-size: 36px;
-	--ls-font-family: 'Poppins';
+	--ls-font-family: "Poppins";
 	--ls-font-weight: 300;
 	--ls-font-letter-spacing: 0.002em;
 	--ls-font-line-height: 1.5;
@@ -76,7 +78,7 @@ Original colors from Bear Panic Mode theme package
 }
 
 .dark-theme,
-html[data-theme='dark'] {
+html[data-theme="dark"] {
 	--ls-primary-background-color: var(--background);
 	--ls-secondary-background-color: var(--dark-background);
 	--ls-tertiary-background-color: var(--light-background);
@@ -216,18 +218,18 @@ a.tooltip-priority:hover {
 	opacity: 0.5;
 }
 
-a.priority[href='#/page/A']:before {
-	content: 'A';
+a.priority[href="#/page/A"]:before {
+	content: "A";
 	background: var(--red);
 }
 
-a.priority[href='#/page/B']:before {
-	content: 'B';
+a.priority[href="#/page/B"]:before {
+	content: "B";
 	background: var(--yellow);
 }
 
-a.priority[href='#/page/C']:before {
-	content: 'C';
+a.priority[href="#/page/C"]:before {
+	content: "C";
 	background: var(--green);
 }
 
@@ -271,8 +273,8 @@ a.tag:hover {
 	color: var(--white-hover);
 }
 
-html[data-theme='dark'] .CodeMirror {
-	font-family: 'FiraCode Nerd Font', 'Fire Code', monospace;
+html[data-theme="dark"] .CodeMirror {
+	font-family: "FiraCode Nerd Font", "Fire Code", monospace;
 	line-height: 1.2;
 	background: var(--background);
 	box-shadow: none;
@@ -280,116 +282,116 @@ html[data-theme='dark'] .CodeMirror {
 	color: var(--white);
 }
 
-html[data-theme='dark'] .cm-s-default .CodeMirror,
-html[data-theme='dark'] .CodeMirror .CodeMirror-gutters {
+html[data-theme="dark"] .cm-s-default .CodeMirror,
+html[data-theme="dark"] .CodeMirror .CodeMirror-gutters {
 	background-color: transparent;
 	color: var(--white) !important;
 	border: none;
 }
 
-html[data-theme='dark'] .extensions__code-lang {
+html[data-theme="dark"] .extensions__code-lang {
 	background: var(--light-background);
 }
 
-html[data-theme='dark'] .CodeMirror {
+html[data-theme="dark"] .CodeMirror {
 	border: 5px solid var(--light-background);
 }
 
-html[data-theme='dark'] .CodeMirror .CodeMirror-gutters {
+html[data-theme="dark"] .CodeMirror .CodeMirror-gutters {
 	color: var(--background);
 }
-html[data-theme='dark'] .CodeMirror .CodeMirror-cursor {
+html[data-theme="dark"] .CodeMirror .CodeMirror-cursor {
 	border-left: solid thin var(--white);
 }
-html[data-theme='dark'] .CodeMirror .CodeMirror-linenumber {
+html[data-theme="dark"] .CodeMirror .CodeMirror-linenumber {
 	color: var(--comment);
 }
-html[data-theme='dark'] .CodeMirror .CodeMirror-selected {
+html[data-theme="dark"] .CodeMirror .CodeMirror-selected {
 	background: rgba(255, 255, 255, 0.1);
 }
 
-html[data-theme='dark'] .CodeMirror .CodeMirror-line {
+html[data-theme="dark"] .CodeMirror .CodeMirror-line {
 	box-shadow: none;
 }
 
-html[data-theme='dark'] .CodeMirror .CodeMirror-line::selection,
-html[data-theme='dark'] .CodeMirror .CodeMirror-line > span::selection,
-html[data-theme='dark']
+html[data-theme="dark"] .CodeMirror .CodeMirror-line::selection,
+html[data-theme="dark"] .CodeMirror .CodeMirror-line > span::selection,
+html[data-theme="dark"]
 	.cm-s-default
 	.CodeMirror-line
 	> span
 	> span::selection {
 	background: rgba(255, 255, 255, 0.1);
 }
-html[data-theme='dark'] .CodeMirror .CodeMirror-line::-moz-selection,
-html[data-theme='dark'] .CodeMirror .CodeMirror-line > span::-moz-selection,
-html[data-theme='dark']
+html[data-theme="dark"] .CodeMirror .CodeMirror-line::-moz-selection,
+html[data-theme="dark"] .CodeMirror .CodeMirror-line > span::-moz-selection,
+html[data-theme="dark"]
 	.cm-s-default
 	.CodeMirror-line
 	> span
 	> span::-moz-selection {
 	background: rgba(255, 255, 255, 0.1);
 }
-html[data-theme='dark'] .CodeMirror span.cm-comment {
+html[data-theme="dark"] .CodeMirror span.cm-comment {
 	color: var(--comment);
 }
-html[data-theme='dark'] .CodeMirror span.cm-string,
-html[data-theme='dark'] .CodeMirror span.cm-string-2 {
+html[data-theme="dark"] .CodeMirror span.cm-string,
+html[data-theme="dark"] .CodeMirror span.cm-string-2 {
 	color: var(--yellow);
 }
-html[data-theme='dark'] .CodeMirror span.cm-number {
+html[data-theme="dark"] .CodeMirror span.cm-number {
 	color: var(--purle);
 }
-html[data-theme='dark'] .CodeMirror span.cm-variable {
+html[data-theme="dark"] .CodeMirror span.cm-variable {
 	color: var(--purple);
 }
-html[data-theme='dark'] .CodeMirror span.cm-variable-2 {
+html[data-theme="dark"] .CodeMirror span.cm-variable-2 {
 	color: var(--white);
 }
-html[data-theme='dark'] .CodeMirror span.cm-def {
+html[data-theme="dark"] .CodeMirror span.cm-def {
 	color: var(--white);
 }
-html[data-theme='dark'] .CodeMirror span.cm-operator {
+html[data-theme="dark"] .CodeMirror span.cm-operator {
 	color: var(--pink);
 }
-html[data-theme='dark'] .CodeMirror span.cm-keyword {
+html[data-theme="dark"] .CodeMirror span.cm-keyword {
 	color: var(--pink);
 }
-html[data-theme='dark'] .CodeMirror span.cm-atom {
+html[data-theme="dark"] .CodeMirror span.cm-atom {
 	color: var(--purple);
 }
-html[data-theme='dark'] .CodeMirror span.cm-meta {
+html[data-theme="dark"] .CodeMirror span.cm-meta {
 	color: var(--white);
 }
-html[data-theme='dark'] .CodeMirror span.cm-tag {
+html[data-theme="dark"] .CodeMirror span.cm-tag {
 	color: var(--pink);
 }
-html[data-theme='dark'] .CodeMirror span.cm-attribute {
+html[data-theme="dark"] .CodeMirror span.cm-attribute {
 	color: var(--green);
 }
-html[data-theme='dark'] .CodeMirror span.cm-qualifier {
+html[data-theme="dark"] .CodeMirror span.cm-qualifier {
 	color: var(--green);
 }
-html[data-theme='dark'] .CodeMirror span.cm-property {
+html[data-theme="dark"] .CodeMirror span.cm-property {
 	color: var(--cyan);
 }
-html[data-theme='dark'] .CodeMirror span.cm-builtin {
+html[data-theme="dark"] .CodeMirror span.cm-builtin {
 	color: var(--green);
 }
-html[data-theme='dark'] .CodeMirror span.cm-variable-3,
-html[data-theme='dark'] .CodeMirror span.cm-type {
+html[data-theme="dark"] .CodeMirror span.cm-variable-3,
+html[data-theme="dark"] .CodeMirror span.cm-type {
 	color: var(--orange);
 }
 
-html[data-theme='dark'] .CodeMirror .CodeMirror-activeline-background {
+html[data-theme="dark"] .CodeMirror .CodeMirror-activeline-background {
 	background: rgba(255, 255, 255, 0.1);
 }
-html[data-theme='dark'] .CodeMirror .CodeMirror-matchingbracket {
+html[data-theme="dark"] .CodeMirror .CodeMirror-matchingbracket {
 	text-decoration: underline;
 	color: var(--white) !important;
 }
 
-html[data-theme='dark'] #right-sidebar pre.CodeMirror-line {
+html[data-theme="dark"] #right-sidebar pre.CodeMirror-line {
 	background: transparent;
 }
 
@@ -413,98 +415,4 @@ a.fade-link {
 /* Flash card styling */
 div[data-refs-self*='"card"'] {
 	background-color: var(--light-background);
-}
-
-/* Bullet threading (delete everything below to stop bullet threads */
-block-control {
-	z-index: 1;
-}
-
-.block-children {
-	border-left-width: var(--ls-block-bullet-threading-width);
-}
-
-.block-content-wrapper {
-	position: relative;
-}
-
-.bullet-container {
-	height: 14px !important;
-	width: 14px !important;
-	position: relative;
-	transform: translate(1px, -1px);
-}
-
-.ls-block .bullet {
-	background-color: var(--ls-block-bullet-active-color);
-	box-shadow: 0 0 0 1px var(--ls-block-bullet-active-color);
-}
-.ls-block div.items-center {
-	position: relative;
-	height: 26px !important;
-}
-.ls-block > .items-baseline {
-	align-items: initial;
-}
-.ls-block:not(:focus-within) .bullet {
-	background-color: var(--ls-block-bullet-color);
-	transform: scale(1);
-	box-shadow: none;
-}
-.ls-block:not(:focus-within) > .items-baseline {
-	align-items: baseline;
-}
-.ls-block .ls-block > div > div.items-center::before {
-	pointer-events: none;
-	content: '';
-	left: calc(var(--ls-block-bullet-threading-width) * -1);
-	right: 6px;
-	top: calc(-50% + var(--ls-block-bullet-threading-width) * 0.5 - 1px);
-	bottom: 50%;
-	/* shift left 1px for border */
-	position: absolute;
-	border-left: var(--ls-block-bullet-threading-width) solid transparent;
-	border-bottom: var(--ls-block-bullet-threading-width) solid transparent;
-	border-bottom-left-radius: 10px;
-}
-.ls-block .ls-block:focus-within > div > div.items-center::before {
-	border-color: var(--ls-block-bullet-active-color);
-}
-.ls-block .block-children > .ls-block::before {
-	pointer-events: none;
-	content: '';
-	top: -1rem;
-	bottom: 0;
-	border-left: var(--ls-block-bullet-threading-width) solid transparent;
-	left: calc(var(--ls-block-bullet-threading-width) * -1);
-	position: absolute;
-}
-.ls-block .block-children:focus-within > .ls-block:not(:focus-within)::before {
-	border-color: var(--ls-block-bullet-active-color);
-}
-.ls-block
-	.block-children:focus-within
-	> .ls-block:focus-within
-	~ .ls-block::before {
-	border-color: transparent;
-}
-.ls-block[haschild='true'] > div > .block-content-wrapper::before {
-	pointer-events: none;
-	content: '';
-	top: 12px;
-	bottom: 0;
-	left: -15px;
-	position: absolute;
-	border-left: var(--ls-block-bullet-threading-width) solid transparent;
-}
-.ls-block[haschild='true']:focus-within > div > .block-content-wrapper::before {
-	border-color: var(--ls-block-bullet-active-color);
-}
-
-/* Disable for doc mode */
-.doc-mode div.items-center::before,
-.doc-mode div.items-center::after,
-.doc-mode .ls-block::before,
-.doc-mode .ls-block::after {
-	display: none;
 }
