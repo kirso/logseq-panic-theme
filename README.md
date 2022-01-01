@@ -20,7 +20,7 @@ The [Logseq](https://logseq.com/) Panic theme is a dark-only theme inspired by [
 You can add the following line (above everything else) to your local directory where `custom.css` lives.
 
 ```css
-@import url('https://cdn.jsdelivr.net/gh/sokirill/logseq-panic-theme@latest/custom.css');
+@import url("https://cdn.jsdelivr.net/gh/sokirill/logseq-panic-theme@latest/custom.css");
 ```
 
 Or, just download / copy the code and paste it into your logseq CSS configuration file
@@ -34,10 +34,10 @@ This is an early iteration of the theme and there probably are several issues wh
 
 ## Bullet threading
 
-If you don't want bullet threading in the theme, just delete the code in `custom.css` with the following comment:
+If you don't want bullet threading in the theme, just delete the second import line in the `custom.css` file.
 
 ```css
-/* Bullet threading*/
+@import url("https://cdn.jsdelivr.net/gh/pengx17/logseq-dev-theme@main/bullet_threading.css");
 ```
 
 ## Credits
