@@ -35,6 +35,8 @@ Original colors from Bear Panic Mode theme package
 	--ls-block-bullet-active-color: var(--yellow);
 	--ls-block-bullet-threading-width: 1px;
 
+	/* CodeMirror root */
+
 	--background: rgba(17, 28, 42, 1);
 	--light-background: rgba(23, 33, 52, 1);
 	--lighter-background: rgba(180, 216, 254, 0.5);
@@ -81,7 +83,7 @@ Original colors from Bear Panic Mode theme package
 html[data-theme="dark"] {
 	--ls-primary-background-color: var(--background);
 	--ls-secondary-background-color: var(--dark-background);
-	--ls-tertiary-background-color: var(--light-background);
+	--ls-tertiary-background-color: var(--lighter-background);
 	--ls-quaternary-background-color: var(--light-background);
 	--ls-quinary-background-color: var(--darker-background);
 
@@ -138,11 +140,6 @@ html[data-theme="dark"] {
 	--ls-selection-background-color: var(--comment);
 	--ls-slide-background-color: var(--ls-primary-background-color);
 	--ls-guideline-color: var(--ls-border-color);
-	--color-level-1: var(--ls-secondary-background-color);
-	--color-level-2: var(--ls-primary-background-color);
-	--color-level-3: var(--ls-quaternary-background-color);
-	--color-level-4: var(--ls-tertiary-background-color);
-	--color-level-5: var(--ls-quinary-background-color);
 }
 
 html,
@@ -151,7 +148,7 @@ body {
 	letter-spacing: var(--ls-font-letter-spacing);
 	line-height: var(--ls-font-line-height);
 	font-size: var(--ls-page-text-size);
-	background-color: #282a36;
+	background-color: var(--ls-primary-background-color);
 }
 
 i {
@@ -190,8 +187,8 @@ mark {
 	border-bottom: none;
 }
 
-contet .external-link:hover {
-	color: var(--blue-hover);
+.external-link:hover {
+	color: var(--pink-hover);
 }
 
 h1.title,
@@ -415,4 +412,10 @@ a.fade-link {
 /* Flash card styling */
 div[data-refs-self*='"card"'] {
 	background-color: var(--light-background);
+}
+
+/* Dropdown menu */
+#head > div.r.flex > div > div.dropdown-wrapper > div,
+#head > div.r.flex > div > div.dropdown-wrapper > div > a {
+	background-color: var(--ls-secondary-background-color);
 }
