@@ -56,12 +56,10 @@ Original colors from Bear Panic Mode theme package
 	--cyan: #8be9fd;
 	--cyan-hover: #8be9fd80;
 	--blue: rgba(84, 193, 220, 1);
-	--blue-hover: rgba(105, 170, 207, 0.3);
 	--checkbox-blue: rgba(38, 67, 104, 1);
 	--checkbox-border-blue: rgba(38, 67, 104, 1);
 	--checkbox-check: rgba(246, 247, 238, 1);
 	--highlight-blue: rgba(45, 78, 120, 1);
-	--pink-hover: #ff79c680;
 	--pink: #ff79c6;
 
 	--bracket-color: #8be9fd;
@@ -103,10 +101,10 @@ html[data-theme="dark"] {
 	--ls-title-text-color: var(--white);
 
 	--ls-link-text-color: var(--pink);
-	--ls-link-text-hover-color: var(--blue-hover);
+	--ls-link-text-hover-color: var(--white-hover);
 
 	--ls-link-ref-text-color: var(--blue);
-	--ls-link-ref-text-hover-color: var(--blue-hover);
+	--ls-link-ref-text-hover-color: var(--white-hover);
 	--ls-block-ref-link-text-color: var(--ls-border-color);
 
 	--ls-tag-text-color: var(--white);
@@ -188,7 +186,7 @@ mark {
 }
 
 .external-link:hover {
-	color: var(--pink-hover);
+	color: var(--white-hover);
 }
 
 h1.title,
