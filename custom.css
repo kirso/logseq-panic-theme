@@ -185,7 +185,11 @@ mark {
 	border-bottom: none;
 }
 
-.external-link:hover {
+.timestamp-label + a:hover,
+.external-link:hover,
+.marker-switch:hover,
+.block-ref:hover,
+.page-ref:hover {
 	color: var(--white-hover);
 }
 
