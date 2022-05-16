@@ -39,7 +39,7 @@ Original colors from Bear Panic Mode theme package
 
 	--background: rgba(17, 28, 42, 1);
 	--light-background: rgba(23, 33, 52, 1);
-	--lighter-background: rgba(180, 216, 254, 0.5);
+	--lighter-background: rgba(23, 33, 52, 1);
 	--link-text-color: rgba(84, 193, 220, 1);
 	--dark-background: #020a14;
 	--darker-background: #191a21;
@@ -421,3 +421,5 @@ div[data-refs-self*='"card"'] {
 #head > div.r.flex > div > div.dropdown-wrapper > div > a {
 	background-color: var(--ls-secondary-background-color);
 }
+
+/* Block references */
