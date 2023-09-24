@@ -30,7 +30,7 @@ Or, just download / copy the code and paste it into your logseq CSS configuratio
 This is an early iteration of the theme and there probably are several issues whilst running it. If you face any bugs or problems kindly:
 
 - Open an issue ticket [here](https://github.com/sokirill/logseq-panic-theme/issues/new). Don't forget to include a description and screenshot/video.
-- Optionally, you can ping me on [Twitter](https://twitter.com/sokirill)
+- Optionally, you can ping me on [Twitter](https://twitter.com/kirso_)
 
 ## Bullet threading
 
